@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Servidor para disciplica Desafios de Software
 
-You can use the [editor on GitHub](https://github.com/SabrinaSimao/softdes-desafios/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A disciplina de Desafios de Software do Insper possui um servidor para que os alunos possam entregar seus exercícios de programação e serem avaliados com nota.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Este tutorial pretende explicar como rodar este servidor e deixa-lo funcional para que alunos possam usar posteriormente.
 
-### Markdown
+É esperado que o aluno, ao se conectar com o servidor, consiga fazer o upload de um arquivo de codigo, em uma atividade especifica de certa data. Ao fazer essa requisição, ele recebe um retorno do servidor falando se o arquivo esta no formato esperado.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Preview de Uso
 
-```markdown
-Syntax highlighted code block
+Link para teste do servidor:
 
-# Header 1
-## Header 2
-### Header 3
+Painel Inicial:
 
-- Bulleted
-- List
+Entrega de Atividade:
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SabrinaSimao/softdes-desafios/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Retorno após ter atividade entregue:
