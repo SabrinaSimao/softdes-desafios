@@ -4,6 +4,7 @@ nav:
     - Home: pagina_inicial.md
     - Guia Do Aluno: guia_aluno.md
     - Guia Do Desenvolvedor: guia_desenvolvedor.md
-    - Guia Do Professor: index.md
+    - Guia Do Professor: guia_prof.md
+    - API: API.md
 
 theme: readthedocs
