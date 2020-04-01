@@ -18,4 +18,4 @@ plugins:
           rendering:
             show_source: true
       watch:
-        - Codigo_desafios/src/lib
+        - Codigo_desafios/src
