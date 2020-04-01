@@ -1,3 +1,3 @@
-::: src.softdes.py
+::: lib.softdes.py
     rendering:
       show_source: false

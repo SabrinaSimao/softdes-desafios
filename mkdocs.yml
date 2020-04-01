@@ -8,3 +8,14 @@ nav:
     - API: API.md
 
 theme: readthedocs
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          rendering:
+            show_source: true
+      watch:
+        - Codigo_desafios/src/lib
