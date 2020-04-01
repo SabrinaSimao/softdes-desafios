@@ -84,8 +84,6 @@ def set_user_quiz(userid, quizid, sent, answer, result):
     """
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
-    #print("insert into USERQUIZ(userid,quizid,sent,answer,result) values ('{0}',{1},'{2}','{3}','{4}');".format(userid, quizid, sent, answer, result))
-    #cursor.execute("insert into USERQUIZ(userid,quizid,sent,answer,result) values ('{0}',{1},'{2}','{3}','{4}');".format(userid, quizid, sent, answer, result))
     cursor.execute("insert into USERQUIZ(userid,quizid,sent,answer,result) values (?,?,?,?,?);", (userid, quizid, sent, answer, result))
 
     conn.commit()
@@ -168,12 +166,8 @@ def main():
         with open(filename, 'r') as fp:
             answer = fp.read()
 
-        #lamb = boto3.client('lambda')
         args = {"ndes": quiz_id, "code": answer, "args": eval(quiz[4]), "resp": eval(quiz[5]), "diag": eval(quiz[6]) }
 
-        #response = lamb.invoke(FunctionName="Teste", InvocationType='RequestResponse', Payload=json.dumps(args))
-        #feedback = response['Payload'].read()
-        #feedback = json.loads(feedback).replace('"','')
         feedback = lambda_handler(args,'')
 
 
