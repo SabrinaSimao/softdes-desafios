@@ -1,6 +1,6 @@
 site_name: Servidor Desafios
 site_url: https://sabrinasimao.github.io/softdes-desafios/
-repo_url: https://sabrinasimao.github.io/softdes-desafios/
+repo_url: https://github.com/SabrinaSimao/softdes-desafios
 
 nav:
     - Home: index.md
