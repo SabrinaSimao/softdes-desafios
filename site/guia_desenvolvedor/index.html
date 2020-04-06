@@ -1,185 +1,139 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Guia Do Desenvolvedor - Servidor Desafios</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://sabrinasimao.github.io/softdes-desafios/guia_desenvolvedor/" rel="canonical"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Guia Do Desenvolvedor - Servidor Desafios</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet">
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Guia Do Desenvolvedor";
     var mkdocs_page_input_path = "guia_desenvolvedor.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/softdes-desafios/guia_desenvolvedor/";
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
-
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</link></link></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Servidor Desafios</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Servidor Desafios</a>
+<div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../pagina_inicial/">Home</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../guia_aluno/">Guia Do Aluno</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Guia Do Desenvolvedor</a>
-    <ul class="current">
-    </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../guia_prof/">Guia Do Professor</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../API/">API</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Servidor Desafios</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Guia Do Desenvolvedor</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  
-  <hr/>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h2 id="estrutura-do-codigo-em-alto-nivel">Estrutura do código em alto nível</h2>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pagina_inicial/">Home</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_aluno/">Guia Do Aluno</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Guia Do Desenvolvedor</a>
+<ul class="current">
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_prof/">Guia Do Professor</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../API/">API</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Servidor Desafios</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Guia Do Desenvolvedor</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h2 id="estrutura-do-codigo-em-alto-nivel">Estrutura do código em alto nível</h2>
 <p>O código do servidor é feito em <code>Python 3.6</code> com o auxílio da biblioteca <code>Flask</code> para subí-lo. O gerenciamento dos dados de usuário, como login, senha e registros de submissão de arquivos são armazenados em <code>SQL</code> e as senhas são criptografadas com o uso da biblioteca <code>hashlib</code>. </p>
 <p>O arquivo principal para a execução do servidor é o <code>softdes.py</code>, com o qual é possível subir o servidor em Flask utilizando alguns arquivos em <code>HTML</code> para a interface do usuário.</p>
 <h2 id="configurando-ambiente">Configurando ambiente</h2>
 <p>Primeiro, é preciso configurar o ambiente instalando as dependências do servidor. Para isto, rode o seguinte comando no terminal:</p>
 <pre><code>$ pip3 install flask flask_httpauth db-sqlite3 hashlib
 </code></pre>
-
 <h2 id="instalacao-do-software">Instalação do software</h2>
 <p>Antes de inicializar o servidor de desafios, primeiro é preciso configurar a data limite de submissão de arquivos pelos alunos. Para isto, abra o arquivo <code>quiz.sql</code> com o editor de texto de sua preferência e altere a data <code>2018-12-31 23:59:59</code> para alguma que o convenha. </p>
 <p>Em seguida, crie um arquivo nomeado <code>users.csv</code> e insira quantos usuários preferir, seguindo o modelo <code>USER,PASSWORD</code>.</p>
 <p>Agora é necessário popular um banco de dados com as informações de login presentes no arquivo <code>users.csv</code>. Para isto, é necessário executar o comando:</p>
 <pre><code>$ sqlite3 quiz.db
 </code></pre>
-
 <p>então, na interface do sqlite3, execute o comando:</p>
 <pre><code>$ .read quiz.sql
 </code></pre>
-
 <p>e para efetivamente adicionar os usuários no banco de dados, execute o comando: </p>
 <pre><code>$ python3 adduser.py
 </code></pre>
-
 <p>Por fim, é necessário subir o servidor, executando o comando:</p>
-<pre><code>$ FLASK_APP=softdes.py flask run --port=&quot;PORTA&quot;
+<pre><code>$ FLASK_APP=softdes.py flask run --port="PORTA"
 </code></pre>
-
 <p>onde o campo <code>"PORTA"</code> deve ser substituido com a porta de sua escolha. Com o servidor online, agora só é necessário entrar com um usuário e sua senha correspondente no site.</p>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../guia_prof/" class="btn btn-neutral float-right" title="Guia Do Professor">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../guia_aluno/" class="btn btn-neutral" title="Guia Do Aluno"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../guia_prof/" title="Guia Do Professor">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../guia_aluno/" title="Guia Do Aluno"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../guia_aluno/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../guia_prof/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../guia_aluno/" style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../guia_prof/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="" src="../search/main.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

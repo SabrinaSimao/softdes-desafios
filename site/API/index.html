@@ -1,154 +1,270 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>API - Servidor Desafios</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://sabrinasimao.github.io/softdes-desafios/API/" rel="canonical"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>API - Servidor Desafios</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet">
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "API";
     var mkdocs_page_input_path = "API.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/softdes-desafios/API/";
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
-
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</link></link></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Servidor Desafios</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Servidor Desafios</a>
+<div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../pagina_inicial/">Home</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../guia_aluno/">Guia Do Aluno</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../guia_desenvolvedor/">Guia Do Desenvolvedor</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../guia_prof/">Guia Do Professor</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">API</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Servidor Desafios</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>API</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  
-  <hr/>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <p>::: src.softdes.py
-    rendering:
-      show_source: false</p>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../guia_prof/" class="btn btn-neutral" title="Guia Do Professor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pagina_inicial/">Home</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_aluno/">Guia Do Aluno</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_desenvolvedor/">Guia Do Desenvolvedor</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_prof/">Guia Do Professor</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">API</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#softdes">softdes</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.change">change()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.convert_data">convert_data()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.get_info">get_info()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.get_password">get_password()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.get_quiz">get_quiz()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.get_quizes">get_quizes()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.get_user_quis">get_user_quis()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.hash_pw">hash_pw()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.lambda_handler">lambda_handler()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.logout">logout()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.main">main()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.set_info">set_info()</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#softdes.set_user_quiz">set_user_quiz()</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Servidor Desafios</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>API</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="reference">Reference</h1>
+<div class="doc doc-object doc-module">
+<h6 class="hidden-toc" href="#softdes" id="softdes" style="visibility: hidden; width: 0; height: 0;">
+</h6>
+<div class="doc doc-contents first">
+<p>Created on Wed Jun 28 09:00:39 2017</p>
+<p>@author: rauli</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.change">
+<code class="highlight language-python">
+change<span class="p">()</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>change</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.convert_data">
+<code class="highlight language-python">
+convert_data<span class="p">(</span><span class="n">orig</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>convert_data</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.get_info">
+<code class="highlight language-python">
+get_info<span class="p">(</span><span class="n">user</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>get_info</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.get_password">
+<code class="highlight language-python">
+get_password<span class="p">(</span><span class="n">username</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>get_password</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.get_quiz">
+<code class="highlight language-python">
+get_quiz<span class="p">(</span><span class="n">quiz_id</span><span class="p">,</span> <span class="n">user</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>get_quiz</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.get_quizes">
+<code class="highlight language-python">
+get_quizes<span class="p">(</span><span class="n">user</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>get_quizes</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.get_user_quis">
+<code class="highlight language-python">
+get_user_quis<span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">quizid</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>get_user_quis</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.hash_pw">
+<code class="highlight language-python">
+hash_pw<span class="p">(</span><span class="n">password</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>hash_pw</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.lambda_handler">
+<code class="highlight language-python">
+lambda_handler<span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>lambda_handler</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.logout">
+<code class="highlight language-python">
+logout<span class="p">()</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>logout</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.main">
+<code class="highlight language-python">
+main<span class="p">()</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>main</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.set_info">
+<code class="highlight language-python">
+set_info<span class="p">(</span><span class="n">pwd</span><span class="p">,</span> <span class="n">user</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>set_info</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="softdes.set_user_quiz">
+<code class="highlight language-python">
+set_user_quiz<span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">quizid</span><span class="p">,</span> <span class="n">sent</span><span class="p">,</span> <span class="n">answer</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>set_user_quiz</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral" href="../guia_prof/" title="Guia Do Professor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../guia_prof/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../guia_prof/" style="color: #fcfcfc;">« Previous</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="" src="../search/main.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

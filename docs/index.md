@@ -1,17 +1,17 @@
-# Welcome to Servidor Desafios
+## Servidor para disciplica Desafios de Software
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+A disciplina de Desafios de Software do Insper possui um servidor para que os alunos possam entregar seus exercícios de programação e serem avaliados com nota.
 
-## Commands
+Este tutorial pretende explicar como rodar este servidor e deixa-lo funcional para que alunos possam usar posteriormente.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+É esperado que o aluno, ao se conectar com o servidor, consiga fazer o upload de um arquivo de codigo, em uma atividade especifica de certa data. Ao fazer essa requisição, ele recebe um retorno do servidor falando se o arquivo esta no formato esperado.
 
-## Project layout
+### Preview de Uso
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Link para teste do servidor:
+
+Painel Inicial:
+
+Entrega de Atividade:
+
+Retorno após ter atividade entregue:

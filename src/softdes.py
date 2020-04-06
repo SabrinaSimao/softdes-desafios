@@ -15,7 +15,7 @@ DBNAME = './quiz.db'
 
 def lambda_handler(event, context):
     """
-    lambda_handler
+    Event Handler
     """
     try:
         import json
@@ -49,13 +49,13 @@ def lambda_handler(event, context):
 
 def convert_data(orig):
     """
-    convert_data
+    Data converter
     """
     return orig[8:10]+'/'+orig[5:7]+'/'+orig[0:4]+' '+orig[11:13]+':'+orig[14:16]+':'+orig[17:]
 
 def get_quizes(user):
     """
-    get_quizes
+    Return all quizes from user
     """
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
@@ -69,7 +69,7 @@ def get_quizes(user):
 
 def get_user_quis(userid, quizid):
     """
-    get_user_quis
+    Return a quiz from a user given a quizId and UserId
     """
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
@@ -80,7 +80,12 @@ def get_user_quis(userid, quizid):
 
 def set_user_quiz(userid, quizid, sent, answer, result):
     """
-    set_user_quiz
+    Insert a quiz into the USERQUIZ table with the following columns\n
+    userId\n
+    quizid\n
+    sent\n
+    answer\n
+    result
     """
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
@@ -91,7 +96,7 @@ def set_user_quiz(userid, quizid, sent, answer, result):
 
 def get_quiz(quiz_id, user):
     """
-    get_quiz
+    Get the quiz details from a user
     """
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
@@ -105,7 +110,7 @@ def get_quiz(quiz_id, user):
 
 def set_info(pwd, user):
     """
-    set_info
+    Set USER PASSWORD
     """
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
@@ -115,7 +120,7 @@ def set_info(pwd, user):
 
 def get_info(user):
     """
-    get_info
+    Return USER PASSWORD
     """
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
@@ -137,7 +142,7 @@ app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?TX'
 @auth.login_required
 def main():
     """
-    main
+    Main Page
     """
     msg = ''
     page = 1
@@ -205,7 +210,7 @@ def main():
 @auth.login_required
 def change():
     """
-    change
+    Change user password
     """
     if request.method == 'POST':
         velha = request.form['old']
@@ -234,21 +239,21 @@ def change():
 @app.route('/logout')
 def logout():
     """
-    logout
+    Logs out of site
     """
     return render_template('index.html', page=2, msg="Logout com sucesso"), 401
 
 @auth.get_password
 def get_password(username):
     """
-    get_password
+    Return USER password
     """
     return get_info(username)
 
 @auth.hash_password
 def hash_pw(password):
     """
-    hash_pw
+    Return USER password in Hash
     """
     return hashlib.md5(password.encode()).hexdigest()
 
