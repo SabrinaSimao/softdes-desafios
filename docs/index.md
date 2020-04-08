@@ -8,10 +8,6 @@ Este tutorial pretende explicar como rodar este servidor e deixa-lo funcional pa
 
 ### Preview de Uso
 
-Link para teste do servidor:
-
 Painel Inicial:
 
-Entrega de Atividade:
-
-Retorno após ter atividade entregue:
+![Pagina Inicial](images/index.jpg)
